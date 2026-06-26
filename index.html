@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>军事实体图标展示</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: #1a1a2e;
+      color: #e0e0e0;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 2px solid #4a7c4a;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #6a9c6a;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #889988;
+      font-size: 1.1rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      color: #6a9c6a;
+      margin-bottom: 20px;
+      padding-left: 15px;
+      border-left: 4px solid #4a7c4a;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-bottom: 50px;
+    }
+
+    .icon-card {
+      background: #16213e;
+      border: 1px solid #2a3a5a;
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+      cursor: pointer;
+    }
+
+    .icon-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(74, 124, 74, 0.2);
+      border-color: #4a7c4a;
+    }
+
+    .icon-wrapper {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 15px;
+      background: #1a1a2e;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #2a3a5a;
+    }
+
+    .icon-wrapper svg {
+      width: 100px;
+      height: 100px;
+    }
+
+    .icon-name {
+      font-size: 1.1rem;
+      color: #c0d0c0;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .icon-en {
+      font-size: 0.85rem;
+      color: #6a7a6a;
+      font-family: 'Courier New', monospace;
+    }
+
+    .combined-section {
+      background: #16213e;
+      border: 1px solid #2a3a5a;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+
+    .combined-section svg {
+      width: 100%;
+      max-width: 800px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .usage-section {
+      background: #16213e;
+      border: 1px solid #2a3a5a;
+      border-radius: 12px;
+      padding: 30px;
+    }
+
+    .usage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .usage-item {
+      background: #1a1a2e;
+      border: 1px solid #2a3a5a;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .usage-item h4 {
+      color: #6a9c6a;
+      margin-bottom: 10px;
+    }
+
+    .usage-item p {
+      color: #889988;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    code {
+      background: #0f0f23;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      color: #6a9c6a;
+      font-size: 0.9em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #556655;
+      font-size: 0.9rem;
+      border-top: 1px solid #2a3a5a;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>⚔️ 军事实体图标库</h1>
+    <p>标准化 SVG 军标符号 — 适用于态势图、作战系统与可视化平台</p>
+  </header>
+
+  <div class="container">
+
+    <!-- 独立图标卡片 -->
+    <h2 class="section-title">独立图标</h2>
+    <div class="card-grid">
+      <div class="icon-card">
+        <div class="icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+            <defs><style>.ei{stroke:#1a3a1a;stroke-width:1.5;fill:#4a7c4a;}.eii{stroke:#1a3a1a;stroke-width:1.5;fill:#6a9c6a;}</style></defs>
+            <rect width="100" height="100" fill="#f5f5f5" rx="4"/>
+            <g transform="translate(50,45) scale(1.5)">
+              <path d="M-20 5L-5 5L-5 2L-20 0Z" class="eii"/>
+              <path d="M5 5L20 5L20 0L5 2Z" class="eii"/>
+              <rect x="-5" y="-15" width="10" height="25" rx="3" class="ei"/>
+              <path d="M-8-15L8-15L0-22Z" class="eii"/>
+            </g>
+            <text x="50" y="88" font-family="Courier New,monospace" font-size="10" font-weight="bold" text-anchor="middle" fill="#1a3a1a">AIR</text>
+          </svg>
+        </div>
+        <div class="icon-name">飞机</div>
+        <div class="icon-en">Airplane</div>
+      </div>
+
+      <div class="icon-card">
+        <div class="icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+            <defs><style>.ei{stroke:#1a3a1a;stroke-width:1.5;fill:#4a7c4a;}.eii{stroke:#1a3a1a;stroke-width:1.5;fill:#6a9c6a;}.ac{stroke:#1a3a1a;stroke-width:1.5;fill:#2a5a2a;}</style></defs>
+            <rect width="100" height="100" fill="#f5f5f5" rx="4"/>
+            <g transform="translate(50,48) scale(1.4)">
+              <rect x="-18" y="-8" width="6" height="22" rx="1" class="ei"/>
+              <rect x="12" y="-8" width="6" height="22" rx="1" class="ei"/>
+              <rect x="-12" y="-5" width="24" height="16" rx="2" class="eii"/>
+              <rect x="-8" y="-12" width="16" height="10" rx="3" class="ei"/>
+              <rect x="1" y="-22" width="3" height="12" class="ac"/>
+              <rect x="0.5" y="-24" width="4" height="3" rx="1" class="ac"/>
+            </g>
+            <text x="50" y="88" font-family="Courier New,monospace" font-size="10" font-weight="bold" text-anchor="middle" fill="#1a3a1a">ARMOR</text>
+          </svg>
+        </div>
+        <div class="icon-name">坦克</div>
+        <div class="icon-en">Tank</div>
+      </div>
+
+      <div class="icon-card">
+        <div class="icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+            <defs><style>.ei{stroke:#1a3a1a;stroke-width:1.5;fill:#4a7c4a;}.eii{stroke:#1a3a1a;stroke-width:1.5;fill:#6a9c6a;}.ac{stroke:#1a3a1a;stroke-width:1.5;fill:#2a5a2a;}</style></defs>
+            <rect width="100" height="100" fill="#f5f5f5" rx="4"/>
+            <g transform="translate(50,50) scale(1.4)">
+              <rect x="-10" y="8" width="20" height="6" rx="2" class="ei"/>
+              <circle cx="0" cy="5" r="5" class="eii"/>
+              <rect x="-6" y="-12" width="2.5" height="18" rx="0.5" class="ac" transform="rotate(-15,-4.5,5)"/>
+              <rect x="3.5" y="-12" width="2.5" height="18" rx="0.5" class="ac" transform="rotate(15,4.5,5)"/>
+              <rect x="-9" y="-15" width="4" height="3" rx="0.5" class="ac" transform="rotate(-15,-7,-13.5)"/>
+              <rect x="5" y="-15" width="4" height="3" rx="0.5" class="ac" transform="rotate(15,7,-13.5)"/>
+            </g>
+            <text x="50" y="88" font-family="Courier New,monospace" font-size="10" font-weight="bold" text-anchor="middle" fill="#1a3a1a">AA</text>
+          </svg>
+        </div>
+        <div class="icon-name">防空炮</div>
+        <div class="icon-en">AA Gun</div>
+      </div>
+
+      <div class="icon-card">
+        <div class="icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+            <defs><style>.ei{stroke:#1a3a1a;stroke-width:1.5;fill:#4a7c4a;}.eii{stroke:#1a3a1a;stroke-width:1.5;fill:#6a9c6a;}</style></defs>
+            <rect width="100" height="100" fill="#f5f5f5" rx="4"/>
+            <g transform="translate(50,52) scale(1.4)">
+              <rect x="-12" y="8" width="24" height="7" rx="2" class="ei"/>
+              <rect x="-6" y="3" width="12" height="6" rx="1" class="eii"/>
+              <path d="M-12 3Q0-8 12 3" class="ei" fill="none" stroke-width="2.5"/>
+              <path d="M-12 3Q0-8 12 3" class="eii" fill="none" stroke-width="1.5" stroke-dasharray="2,1"/>
+              <line x1="0" y1="-3" x2="0" y2="3" stroke="#1a3a1a" stroke-width="1.5"/>
+              <path d="M-8-6Q0-16 8-6" fill="none" stroke="#1a3a1a" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.5"/>
+            </g>
+            <text x="50" y="88" font-family="Courier New,monospace" font-size="10" font-weight="bold" text-anchor="middle" fill="#1a3a1a">RADAR</text>
+          </svg>
+        </div>
+        <div class="icon-name">雷达</div>
+        <div class="icon-en">Radar</div>
+      </div>
+
+      <div class="icon-card">
+        <div class="icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+            <defs><style>.ei{stroke:#1a3a1a;stroke-width:1.5;fill:#4a7c4a;}.eii{stroke:#1a3a1a;stroke-width:1.5;fill:#6a9c6a;}.ac{stroke:#1a3a1a;stroke-width:1.5;fill:#2a5a2a;}</style></defs>
+            <rect width="100" height="100" fill="#f5f5f5" rx="4"/>
+            <g transform="translate(50,50) scale(1.3)">
+              <path d="M-8-18L8-18L12 0L8 18L-8 18L-12 0Z" class="ei"/>
+              <path d="M-6-12L6-12L9 0L6 12L-6 12L-9 0Z" class="eii"/>
+              <rect x="-3" y="-6" width="6" height="8" rx="1" class="ac"/>
+              <line x1="0" y1="-6" x2="0" y2="-14" stroke="#1a3a1a" stroke-width="1.5"/>
+              <line x1="-3" y1="-11" x2="3" y2="-11" stroke="#1a3a1a" stroke-width="1"/>
+            </g>
+            <text x="50" y="88" font-family="Courier New,monospace" font-size="10" font-weight="bold" text-anchor="middle" fill="#1a3a1a">SHIP</text>
+          </svg>
+        </div>
+        <div class="icon-name">舰船</div>
+        <div class="icon-en">Ship</div>
+      </div>
+    </div>
+
+    <!-- 组合展示 -->
+    <h2 class="section-title">组合展示</h2>
+    <div class="combined-section">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%">
+        <defs>
+          <style>
+            .entity-icon { stroke: #1a3a1a; stroke-width: 1.5; fill: #4a7c4a; }
+            .entity-icon-light { stroke: #1a3a1a; stroke-width: 1.5; fill: #6a9c6a; }
+            .accent { stroke: #1a3a1a; stroke-width: 1.5; fill: #2a5a2a; }
+            .label { font-family: 'Courier New', monospace; font-size: 12px; font-weight: bold; text-anchor: middle; fill: #1a3a1a; }
+            .bg-panel { fill: #f5f5f5; stroke: #ccc; stroke-width: 1; }
+          </style>
+        </defs>
+
+        <rect x="10" y="10" width="150" height="180" class="bg-panel" rx="4"/>
+        <rect x="170" y="10" width="150" height="180" class="bg-panel" rx="4"/>
+        <rect x="330" y="10" width="150" height="180" class="bg-panel" rx="4"/>
+        <rect x="490" y="10" width="150" height="180" class="bg-panel" rx="4"/>
+        <rect x="650" y="10" width="150" height="180" class="bg-panel" rx="4"/>
+
+        <g transform="translate(85, 70) scale(1.2)">
+          <path d="M -20 5 L -5 5 L -5 2 L -20 0 Z" class="entity-icon-light"/>
+          <path d="M 5 5 L 20 5 L 20 0 L 5 2 Z" class="entity-icon-light"/>
+          <rect x="-5" y="-15" width="10" height="25" rx="3" class="entity-icon"/>
+          <path d="M -8 -15 L 8 -15 L 0 -22 Z" class="entity-icon-light"/>
+        </g>
+        <text x="85" y="165" class="label">飞机</text>
+
+        <g transform="translate(245, 70) scale(1.2)">
+          <rect x="-18" y="-8" width="6" height="22" rx="1" class="entity-icon"/>
+          <rect x="12" y="-8" width="6" height="22" rx="1" class="entity-icon"/>
+          <rect x="-12" y="-5" width="24" height="16" rx="2" class="entity-icon-light"/>
+          <rect x="-8" y="-12" width="16" height="10" rx="3" class="entity-icon"/>
+          <rect x="1" y="-22" width="3" height="12" class="accent"/>
+          <rect x="0.5" y="-24" width="4" height="3" rx="1" class="accent"/>
+        </g>
+        <text x="245" y="165" class="label">坦克</text>
+
+        <g transform="translate(405, 70) scale(1.2)">
+          <rect x="-10" y="8" width="20" height="6" rx="2" class="entity-icon"/>
+          <circle cx="0" cy="5" r="5" class="entity-icon-light"/>
+          <rect x="-6" y="-12" width="2.5" height="18" rx="0.5" class="accent" transform="rotate(-15, -4.5, 5)"/>
+          <rect x="3.5" y="-12" width="2.5" height="18" rx="0.5" class="accent" transform="rotate(15, 4.5, 5)"/>
+          <rect x="-9" y="-15" width="4" height="3" rx="0.5" class="accent" transform="rotate(-15, -7, -13.5)"/>
+          <rect x="5" y="-15" width="4" height="3" rx="0.5" class="accent" transform="rotate(15, 7, -13.5)"/>
+        </g>
+        <text x="405" y="165" class="label">防空炮</text>
+
+        <g transform="translate(565, 70) scale(1.2)">
+          <rect x="-12" y="8" width="24" height="7" rx="2" class="entity-icon"/>
+          <rect x="-6" y="3" width="12" height="6" rx="1" class="entity-icon-light"/>
+          <path d="M -12 3 Q 0 -8 12 3" class="entity-icon" fill="none" stroke-width="2.5"/>
+          <path d="M -12 3 Q 0 -8 12 3" class="entity-icon-light" fill="none" stroke-width="1.5" stroke-dasharray="2,1"/>
+          <line x1="0" y1="-3" x2="0" y2="3" stroke="#1a3a1a" stroke-width="1.5"/>
+          <path d="M -8 -6 Q 0 -16 8 -6" fill="none" stroke="#1a3a1a" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.5"/>
+        </g>
+        <text x="565" y="165" class="label">雷达</text>
+
+        <g transform="translate(725, 70) scale(1.2)">
+          <path d="M -8 -18 L 8 -18 L 12 0 L 8 18 L -8 18 L -12 0 Z" class="entity-icon"/>
+          <path d="M -6 -12 L 6 -12 L 9 0 L 6 12 L -6 12 L -9 0 Z" class="entity-icon-light"/>
+          <rect x="-3" y="-6" width="6" height="8" rx="1" class="accent"/>
+          <line x1="0" y1="-6" x2="0" y2="-14" stroke="#1a3a1a" stroke-width="1.5"/>
+          <line x1="-3" y1="-11" x2="3" y2="-11" stroke="#1a3a1a" stroke-width="1"/>
+        </g>
+        <text x="725" y="165" class="label">舰船</text>
+      </svg>
+    </div>
+
+    <!-- 使用说明 -->
+    <h2 class="section-title">使用说明</h2>
+    <div class="usage-section">
+      <div class="usage-grid">
+        <div class="usage-item">
+          <h4>🎨 设计规范</h4>
+          <p>统一橄榄绿军事色系，俯视/平面投影视角，符合军用地图标绘规范。所有图标默认朝上为前进方向。</p>
+        </div>
+        <div class="usage-item">
+          <h4>📐 矢量缩放</h4>
+          <p>SVG 格式无损缩放，适用于态势大屏、作战系统、Web 平台及打印输出。可通过 <code>transform: scale()</code> 调整尺寸。</p>
+        </div>
+        <div class="usage-item">
+          <h4>🔄 方向变换</h4>
+          <p>通过 CSS 或 SVG <code>transform="rotate(角度, 中心X, 中心Y)"</code> 实现任意方向标注，适配实时态势展示。</p>
+        </div>
+        <div class="usage-item">
+          <h4>🌓 明暗适配</h4>
+          <p>当前配色适配浅色背景。深色主题下可将填充色反转为 <code>#8aaa8a</code> 系列，描边保持 <code>#c0d0c0</code>。</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>军事实体图标库 — 基于 SVG 标准构建 | 支持态势感知系统与可视化平台集成</p>
+  </footer>
+
+</body>
+</html>
